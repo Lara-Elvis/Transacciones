@@ -62,17 +62,20 @@ namespace Transacciones
 
         private void button2_Click(object sender, EventArgs e)
         {
+            openChild(new Form3());
+
             hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChild(new Form2());
             hideSubMenu();
         }
 
         private void btnRetirar_Click(object sender, EventArgs e)
         {
-
+            openChild(new Retirar());
         }
 
         private void btnTransferir_Click(object sender, EventArgs e)
@@ -82,16 +85,22 @@ namespace Transacciones
 
         private void button8_Click(object sender, EventArgs e)
         {
+            openChild(new TransferenciaMovil());
+
             hideSubMenu();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            openChild(new TransferenciaPropias());
+
             hideSubMenu();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
+            openChild(new TransferenciaOtrosBancos());
+
             hideSubMenu();
         }
 
@@ -102,12 +111,31 @@ namespace Transacciones
 
         private void button10_Click(object sender, EventArgs e)
         {
+            openChild(new HistorialReciente());
+
             hideSubMenu();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            openChild(new HistorialAntiguos());
+
             hideSubMenu();
+        }
+
+        private Form activeForm = null;
+        private void openChild(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

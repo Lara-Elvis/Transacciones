@@ -52,11 +52,71 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialAntiguos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialAntiguos.Designer.cs">
+      <DependentUpon>HistorialAntiguos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialReciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialReciente.Designer.cs">
+      <DependentUpon>HistorialReciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retirar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retirar.Designer.cs">
+      <DependentUpon>Retirar.cs</DependentUpon>
+    </Compile>
     <Compile Include="TemaColores.cs" />
+    <Compile Include="TransferenciaMovil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferenciaMovil.Designer.cs">
+      <DependentUpon>TransferenciaMovil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferenciaOtrosBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferenciaOtrosBancos.Designer.cs">
+      <DependentUpon>TransferenciaOtrosBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferenciaPropias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferenciaPropias.Designer.cs">
+      <DependentUpon>TransferenciaPropias.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialAntiguos.resx">
+      <DependentUpon>HistorialAntiguos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialReciente.resx">
+      <DependentUpon>HistorialReciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,7 +126,20 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Retirar.resx">
+      <DependentUpon>Retirar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferenciaMovil.resx">
+      <DependentUpon>TransferenciaMovil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferenciaOtrosBancos.resx">
+      <DependentUpon>TransferenciaOtrosBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferenciaPropias.resx">
+      <DependentUpon>TransferenciaPropias.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\umg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
